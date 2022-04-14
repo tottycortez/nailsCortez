@@ -1,0 +1,246 @@
+/* GENERALES */
+* {	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(198, 218, 243);
+    font-family: 'Merriweather', serif;
+}
+h1{
+	font-size: 5rem;
+}
+h2{
+	background-color: wheat;
+	font-size: 3rem;
+	margin: 30px;
+	opacity: 0.7;
+}
+h3{
+	font-size: 2rem;
+	margin: 30px;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Alice', serif;
+    text-align: center;
+}
+p{
+	font-size: 1.2rem;
+}
+/* FIN GENERALES */
+/* GRID */
+	/* INDEX */
+.contenedorInicio{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+    "header header header"
+    "banner banner banner"
+	"contenido contenido sidebar"
+	"footer footer footer";
+}
+.header{
+	grid-area: header;
+}
+.banner {
+	grid-area: banner;
+}
+.contenido {
+	grid-area: contenido;
+}
+.sidebar {
+	grid-area: sidebar;
+}
+.footer{
+	grid-area: footer;
+}
+	/* FIN INDEX */
+	/* SERVICIOS */
+.contenedorServicios{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+			"header header header"
+			"banner banner banner"
+			"caja1 caja2 caja3"
+			"caja4 caja5 caja6"
+			"footer footer footer";
+}
+.caja1 {
+	grid-area: caja1;
+}
+.caja2 {
+	grid-area: caja2;
+}
+.caja3 {
+	grid-area: caja3;
+}
+.caja4 {
+	grid-area: caja4;
+}
+.caja5 {
+	grid-area: caja5;
+}
+.caja6 {
+	grid-area: caja6;
+}
+.caja1, .caja2, .caja3, .caja4, .caja5, .caja6{
+	background-color:darkmagenta;
+	border-radius: 30px;
+	padding: 30px;
+	margin: 30px;
+	text-align: center;
+}
+	/* FIN SERVICIOS */
+/* FIN GRID */
+/* HEADER */
+.header, .footer{
+	background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+	padding: 20px;
+}
+.menu{
+    background-color: rgb(247, 165, 222);
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+li{
+    display: inline-block;
+    position: relative;
+	font-size: 1.3rem;
+}
+.link:hover{
+    color: cadetblue;
+    text-decoration: overline;
+}
+ul{
+    padding: 16px;
+}
+a{
+    text-decoration: none;
+    color: rgb(124, 42, 124);
+}
+/* FIN HEADER */
+/* HERO */
+.banner {
+	background-repeat: no-repeat;
+ 	background-position: center center;
+ 	background-size: cover;
+	display: flex;
+	justify-content:left;
+	align-items:flex-end;
+	height: 600px;
+}
+.hero{
+	background-image: url(/img/banner/banner-index.jpg);
+	border-radius: 4px;
+}
+.servicios{
+	background-image: url(/img/banner/banner-servicios.jpg);
+	border-radius: 4px;
+}
+.nosotros{
+	background-image: url(/img/banner/banner-nosotros.jpg);
+	border-radius: 4px;
+}
+.contacto{
+	background-image: url(/img/banner/banner-contacto.jpg);
+}
+/* FIN HERO */
+/* CONTENIDO PRINCIPAL */
+	/* INDEX */
+.contenedor-princ{
+	padding: 20px;
+}
+.sidebar {
+	padding: 20px;
+}
+	/* FIN INDEX */
+	/* NOSOTROS */
+.personal{
+	width: 400px;
+}
+.caja-personal{
+	text-align: center;
+	margin: 80px;
+}
+.texto-persona{
+	padding-top: 30px;
+}
+	/* FIN NOSOTROS */
+/* FIN CONTENIDO PRINCIPAL */
+/* PIE DE PÁGINA */
+.pie{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+/* FIN PIE DE PÁGINA */
+/* CELULARES */
+@media screen and (max-width:767px) {
+	/* HEADER */
+	.menu{
+		background-color: rgb(247, 165, 222);
+		border-radius: 4px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	/* FIN HEADER */
+	/* GRID */
+		/* INICIO */
+	.contenedorInicio{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: 
+		"header header"
+		"banner banner"
+		"contenido contenido"
+		"sidebar sidebar"
+		"footer footer";
+	}
+		/* FIN INICIO */
+		/* SERVICIOS */
+	.contenedorServicios{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(9, auto);
+		grid-template-areas: 
+		"header header"
+		"banner banner"
+		"caja1 caja1"
+		"caja2 caja2"
+		"caja3 caja3"
+		"caja4 caja4"
+		"caja5 caja5"
+		"caja6 caja6"
+		"footer footer";
+	}
+		/* FIN SERVICIOS */
+	/* FIN GRID */
+	/* CONTENIDO PRINCIPAL */
+		/* NOSOTROS */
+	.personal{
+		width: 200px;
+	}
+	.caja-personal{
+		margin: 30px;
+	}
+		/* FIN NOSOTROS */
+	/* FIN CONTENIDO PRINCIPAL */
+}
+/* FIN CELULARES */
+/* TABLET */
+@media screen and (min-width:768px) and (max-width:1023px) {
+	
+}
+/* FIN TABLET */
+/* DESKTOP */
+@media screen and (min-width:1024px) {
+	
+}
+/* FIN DESKTOP */
