@@ -276,7 +276,10 @@ a{
 @media screen and (max-width:767px) {
 	/* HEADER */
 	h1{
-		font-size: 3.5rem;
+		font-size: 3rem;
+	}
+	h2{
+		font-size: 2rem;
 	}
 	.menu{
 		background-color: rgb(247, 165, 222);
