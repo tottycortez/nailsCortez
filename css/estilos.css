@@ -138,19 +138,19 @@ a{
 	height: 600px;
 }
 .hero{
-	background-image: url(/img/banner/banner-index.jpg);
+	background-image: url(../img/banner/banner-index.jpg);
 	border-radius: 4px;
 }
 .servicios{
-	background-image: url(/img/banner/banner-servicios.jpg);
+	background-image: url(../img/banner/banner-servicios.jpg);
 	border-radius: 4px;
 }
 .nosotros{
-	background-image: url(/img/banner/banner-nosotros.jpg);
+	background-image: url(../img/banner/banner-nosotros.jpg);
 	border-radius: 4px;
 }
 .contacto{
-	background-image: url(/img/banner/banner-contacto.jpg);
+	background-image: url(../img/banner/banner-contacto.jpg);
 }
 /* FIN HERO */
 /* CONTENIDO PRINCIPAL */
@@ -279,7 +279,11 @@ a{
 		background-color: rgb(247, 165, 222);
 		border-radius: 4px;
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+	}
+	li{
+		padding: 4px;
 	}
 	/* FIN HEADER */
 	/* GRID */
