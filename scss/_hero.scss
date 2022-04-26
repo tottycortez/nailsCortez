@@ -1,0 +1,29 @@
+.banner {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    height: 530px;
+}
+.hero {
+    background-image: url(../img/banner/banner-index.jpg);
+    border-radius: 4px;
+}
+
+.servicios {
+    background-image: url(../img/banner/banner-servicios.jpg);
+    border-radius: 4px;
+}
+
+.nosotros {
+    background-image: url(../img/banner/banner-nosotros.jpg);
+    border-radius: 4px;
+}
+
+.contacto {
+    background-image: url(../img/banner/banner-contacto.jpg);
+    border-radius: 4px;
+    background-position: initial;
+}

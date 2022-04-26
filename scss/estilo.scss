@@ -1,4 +1,37 @@
 $bgbody: #c6daf3;
+$titulo: 5rem;
+$subtitulo: 3rem;
 body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: $bgbody;
+    font-family: 'Merriweather', serif;
+    h1{
+        font-size: $titulo;
+    }
+    h2{
+        background-color: #f5deb3;
+        font-size: $subtitulo;
+        margin: 30px;
+        opacity: 0.5;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h1, h2, h3, h4, h5{
+	font-family: 'Alice', serif;
+	text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+    }
 }
+
+    @import "grid";
+    @import "header-footer";
+    @import "hero";
+    @import "contenido-principal";
+    @import "animaciones";
+    @import "responsive";
+   
