@@ -4,20 +4,7 @@
 	}
 	h2 {
 		font-size: 2rem;
-	}
-	.menu {
-		background-color: rgb(247, 165, 222);
-		border-radius: 3px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		
-		li {
-			padding: 4px;
-		}
-	}
-	
+	}	
 	.contenedorInicio {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(5, auto);

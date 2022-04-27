@@ -8,14 +8,10 @@
 	}
 
 	.menu {
-		background-color: rgb(247, 165, 222);
-		border-radius: 4px;
-		display: flex;
-		justify-content: space-evenly;
+		margin: 20px;
 		li {
-			display: inline-block;
-			position: relative;
 			font-size: 1.3rem;
+			margin: 20px;
 			a {
 				text-decoration: none;
 				color: rgb(124, 42, 124);

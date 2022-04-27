@@ -130,14 +130,10 @@ body {
   .header ul {
     padding: 16px; }
   .header .menu {
-    background-color: #f7a5de;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-evenly; }
+    margin: 20px; }
     .header .menu li {
-      display: inline-block;
-      position: relative;
-      font-size: 1.3rem; }
+      font-size: 1.3rem;
+      margin: 20px; }
       .header .menu li a {
         text-decoration: none;
         color: #7c2a7c; }
@@ -345,15 +341,6 @@ body {
     font-size: 3rem; }
   h2 {
     font-size: 2rem; }
-  .menu {
-    background-color: #f7a5de;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .menu li {
-      padding: 4px; }
   .contenedorInicio {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
