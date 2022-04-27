@@ -1,0 +1,36 @@
+.contenedor-princ {
+	margin: 30px;
+    .presentacion {
+        text-align: center;
+    }
+}
+.sidebar {
+	padding: 20px;
+    .promos {
+        border: solid plum;
+        border-radius: 30px;
+        text-align: center;
+        margin: 5px;
+        padding: 20px;
+    }
+}
+.personal {
+	width: 300px;
+	border-radius: 30px;
+}
+.texto-persona {
+	padding: 20px;
+}
+.botonera {
+	border-radius: 30px;
+	padding: 25px;
+	border: solid antiquewhite;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: gray;
+    text-decoration: none;
+}
+.botonera:hover {
+    background-color: #d5adc8;
+}

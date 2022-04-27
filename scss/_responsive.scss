@@ -1,0 +1,94 @@
+@media screen and (max-width:767px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}	
+	.contenedorInicio {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas:
+			"header header"
+			"banner banner"
+			"contenido contenido"
+			"sidebar sidebar"
+			"footer footer";
+	}
+	.contenedorServicios {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(9, auto);
+		grid-template-areas:
+			"header header"
+			"banner banner"
+			"caja1 caja1"
+			"caja2 caja2"
+			"caja3 caja3"
+			"caja4 caja4"
+			"caja5 caja5"
+			"caja6 caja6"
+			"footer footer";
+	}
+	.contenedorNosotros {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(6, auto);
+		grid-template-areas:
+			"persona1 persona1"
+			"botonera1 botonera1"
+			"persona2 persona2"
+			"botonera2 botonera2"
+			"persona3 persona3"
+			"botonera3 botonera3";
+	}
+	.persona1,
+	.persona2,
+	.persona3 {
+		border: solid antiquewhite;
+		border-radius: 30px;
+		margin: 50px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	.personal {
+		width: 200px;
+	}
+	.botonera {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1276px) {
+	.contenedorNosotros {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(6, auto);
+		grid-template-areas:
+			"persona1 persona1"
+			"botonera1 botonera1"
+			"persona2 persona2"
+			"botonera2 botonera2"
+			"persona3 persona3"
+			"botonera3 botonera3";
+	}
+	.persona1,
+	.persona2,
+	.persona3 {
+		border: solid antiquewhite;
+		border-radius: 30px;
+		margin: 50px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	.personal {
+		width: 200px;
+	}
+	.botonera {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (min-width:1276px) {
+}
