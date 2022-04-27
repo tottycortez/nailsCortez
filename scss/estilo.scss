@@ -9,6 +9,10 @@ body{
     font-family: 'Merriweather', serif;
     h1{
         font-size: $titulo;
+        a{
+            text-decoration: none;
+			color: rgb(124, 42, 124);
+        }
     }
     h2{
         background-color: #f5deb3;
@@ -34,4 +38,3 @@ body{
     @import "contenido-principal";
     @import "animaciones";
     @import "responsive";
-   

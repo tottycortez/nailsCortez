@@ -6,6 +6,9 @@ body {
   font-family: 'Merriweather', serif; }
   body h1 {
     font-size: 5rem; }
+    body h1 a {
+      text-decoration: none;
+      color: #7c2a7c; }
   body h2 {
     background-color: #f5deb3;
     font-size: 3rem;
@@ -130,8 +133,7 @@ body {
     background-color: #f7a5de;
     border-radius: 4px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end; }
+    justify-content: space-evenly; }
     .header .menu li {
       display: inline-block;
       position: relative;
@@ -346,7 +348,10 @@ body {
   .menu {
     background-color: #f7a5de;
     border-radius: 3px;
-    display: flex; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .menu li {
       padding: 4px; }
   .contenedorInicio {
