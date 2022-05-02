@@ -1,10 +1,16 @@
 @media screen and (max-width:767px) {
-	h1 {
-		font-size: 3rem;
+	header {
+		h1 {
+			font-size: 2.7rem;
+		}
 	}
-	h2 {
-		font-size: 2rem;
-	}	
+
+	.banner {
+		h2 {
+			font-size: 2rem;
+		}
+	}
+
 	.contenedorInicio {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(5, auto);
@@ -15,6 +21,7 @@
 			"sidebar sidebar"
 			"footer footer";
 	}
+
 	.contenedorServicios {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(9, auto);
@@ -29,6 +36,7 @@
 			"caja6 caja6"
 			"footer footer";
 	}
+
 	.contenedorNosotros {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -41,6 +49,7 @@
 			"persona3 persona3"
 			"botonera3 botonera3";
 	}
+
 	.persona1,
 	.persona2,
 	.persona3 {
@@ -51,9 +60,11 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	.personal {
 		width: 200px;
 	}
+
 	.botonera {
 		margin-bottom: 40px;
 	}
@@ -72,6 +83,7 @@
 			"persona3 persona3"
 			"botonera3 botonera3";
 	}
+
 	.persona1,
 	.persona2,
 	.persona3 {
@@ -82,13 +94,14 @@
 		display: flex;
 		flex-direction: column;
 	}
+
 	.personal {
 		width: 200px;
 	}
+
 	.botonera {
 		margin-bottom: 40px;
 	}
 }
 
-@media screen and (min-width:1276px) {
-}
+@media screen and (min-width:1276px) {}
