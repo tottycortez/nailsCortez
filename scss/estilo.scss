@@ -1,14 +1,13 @@
 $bgbody: #c6daf3;
-$titulo: 6rem;
+$titulo: 7rem;
 $colortitulo: #863286df;
-$subtitulo: $titulo - 2;
+$subtitulo: $titulo - 3;
 $colorsubtitulo: #651d65d2;
 $colhoversub: #5f9ea0;
 @mixin titulostipografia ($variable1, $variable2, $variable3) {
     font-family: $variable1;
     text-align: $variable2;
     font-size: $variable3;
-
 }
 @mixin decosubtitle ($variable1, $variable2) {
     text-decoration: $variable1;
@@ -41,19 +40,18 @@ body{
         opacity: 0.5;
     }
     h3{
-        @include titulostipografia ('Alice', center, $subtitulo - 2);
+        @include titulostipografia ('Alice', center, $subtitulo - 1);
     }
     h4{
         @include titulostipografia ('Alice', center, $subtitulo - 2.6);
     }
     h5 {
-        @include titulostipografia ('Alice', center, $subtitulo - 2);
+        @include titulostipografia ('Alice', center, $subtitulo - 3);
     }
     p{
-        font-size: $subtitulo - 3;
+        font-size: $subtitulo - 2.5;
     }
 }
-
     @import "grid";
     @import "header-footer";
     @import "hero";
