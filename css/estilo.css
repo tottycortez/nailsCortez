@@ -5,31 +5,43 @@ body {
   background-color: #c6daf3;
   font-family: 'Merriweather', serif; }
   body h1 {
-    font-size: 5rem; }
-    body h1 a {
+    font-family: "Alice";
+    text-align: center;
+    font-size: 6rem; }
+    body h1 a, body h1 a:hover {
       text-decoration: none;
-      color: #7c2a7c; }
+      color: #863286df; }
   body h2 {
+    font-family: "Alice";
+    text-align: center;
+    font-size: 4rem;
     background-color: #f5deb3;
-    font-size: 3rem;
     margin: 30px;
     opacity: 0.5; }
   body h3 {
+    font-family: "Alice";
+    text-align: center;
     font-size: 2rem; }
-  body h1, body h2, body h3, body h4, body h5 {
-    font-family: 'Alice', serif;
-    text-align: center; }
+  body h4 {
+    font-family: "Alice";
+    text-align: center;
+    font-size: 2rem; }
+  body h5 {
+    font-family: "Alice";
+    text-align: center;
+    font-size: 2rem; }
   body p {
-    font-size: 1.2rem; }
+    font-size: 1rem; }
 
 .contenedorInicio {
+  background-color: #c6daf3;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "header header header" "banner banner banner" "contenido contenido sidebar" "footer footer footer"; }
 
-.header {
+.header, .footer {
   grid-area: header; }
 
 .banner {
@@ -123,42 +135,38 @@ body {
   align-items: center;
   justify-content: center; }
 
-.header {
+.header, .footer {
   background-color: #d5adc8;
   background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
   padding: 20px; }
-  .header ul {
+  .header ul, .footer ul {
     padding: 16px; }
-  .header .menu {
+  .header .menu, .footer .menu {
     margin: 20px; }
-    .header .menu li {
-      font-size: 1.3rem;
+    .header .menu li, .footer .menu li {
+      font-size: 2rem;
       margin: 20px; }
-      .header .menu li a {
+      .header .menu li a, .footer .menu li a {
         text-decoration: none;
-        color: #7c2a7c; }
-    .header .menu .link:hover {
-      color: cadetblue;
-      text-decoration: overline; }
+        color: #651d65d2; }
+    .header .menu .link:hover, .footer .menu .link:hover {
+      text-decoration: overline;
+      color: #5f9ea0; }
 
-.footer {
-  background-color: #d5adc8;
-  background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
-  padding: 20px; }
-  .footer .pie {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end; }
-    .footer .pie li {
-      display: inline-block;
-      position: relative;
-      font-size: 1.3rem; }
-      .footer .pie li a {
-        text-decoration: none;
-        color: #7c2a7c; }
-    .footer .pie .link:hover {
-      color: cadetblue;
-      text-decoration: overline; }
+.footer .pie {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end; }
+  .footer .pie li {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem; }
+    .footer .pie li a {
+      text-decoration: none;
+      color: #651d65d2; }
+  .footer .pie .link:hover {
+    text-decoration: overline;
+    color: #5f9ea0; }
 
 .banner {
   background-repeat: no-repeat;

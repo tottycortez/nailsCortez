@@ -1,6 +1,23 @@
 $bgbody: #c6daf3;
-$titulo: 5rem;
-$subtitulo: 3rem;
+$titulo: 6rem;
+$colortitulo: #863286df;
+$subtitulo: $titulo - 2;
+$colorsubtitulo: #651d65d2;
+$colhoversub: #5f9ea0;
+@mixin titulostipografia ($variable1, $variable2, $variable3) {
+    font-family: $variable1;
+    text-align: $variable2;
+    font-size: $variable3;
+
+}
+@mixin decosubtitle ($variable1, $variable2) {
+    text-decoration: $variable1;
+	color: $variable2;
+}
+@mixin  decohoversub ($variable1, $variable2) {
+    text-decoration: $variable1; 
+    color: $variable2;
+}
 body{
     margin: 0;
     padding: 0;
@@ -8,27 +25,32 @@ body{
     background-color: $bgbody;
     font-family: 'Merriweather', serif;
     h1{
-        font-size: $titulo;
+        @include titulostipografia ('Alice', center, $titulo);
         a{
             text-decoration: none;
-			color: rgb(124, 42, 124);
+			color: $colortitulo;
+        }
+        a:hover{
+            @extend a ;
         }
     }
     h2{
+        @include titulostipografia ('Alice', center, $subtitulo);
         background-color: #f5deb3;
-        font-size: $subtitulo;
         margin: 30px;
         opacity: 0.5;
     }
     h3{
-        font-size: 2rem;
+        @include titulostipografia ('Alice', center, $subtitulo - 2);
     }
-    h1, h2, h3, h4, h5{
-	font-family: 'Alice', serif;
-	text-align: center;
+    h4{
+        @include titulostipografia ('Alice', center, $subtitulo - 2);
+    }
+    h5 {
+        @include titulostipografia ('Alice', center, $subtitulo - 2);
     }
     p{
-        font-size: 1.2rem;
+        font-size: $subtitulo - 3;
     }
 }
 
@@ -38,4 +60,3 @@ body{
     @import "contenido-principal";
     @import "animaciones";
     @import "responsive";
-   
