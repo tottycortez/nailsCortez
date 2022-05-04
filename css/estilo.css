@@ -7,7 +7,7 @@ body {
   body h1 {
     font-family: "Alice";
     text-align: center;
-    font-size: 6rem; }
+    font-size: 7rem; }
     body h1 a, body h1 a:hover {
       text-decoration: none;
       color: #863286df; }
@@ -21,7 +21,7 @@ body {
   body h3 {
     font-family: "Alice";
     text-align: center;
-    font-size: 2rem; }
+    font-size: 3rem; }
   body h4 {
     font-family: "Alice";
     text-align: center;
@@ -29,9 +29,9 @@ body {
   body h5 {
     font-family: "Alice";
     text-align: center;
-    font-size: 2rem; }
-  body p {
     font-size: 1rem; }
+  body p {
+    font-size: 1.5rem; }
 
 .contenedorInicio {
   background-color: #c6daf3;
@@ -347,21 +347,39 @@ body {
 @media screen and (max-width: 767px) {
   header h1 {
     font-size: 2.7rem; }
-  .banner h2 {
-    font-size: 2rem; }
+  .header .menu li, .footer .menu li {
+    font-size: 1.4rem; }
   .contenedorInicio {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header header" "banner banner" "contenido contenido" "sidebar sidebar" "footer footer"; }
+    .contenedorInicio h2 {
+      font-size: 2rem; }
+    .contenedorInicio h3 {
+      font-size: 2rem; }
+    .contenedorInicio p {
+      font-size: 1rem; }
   .contenedorServicios {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, auto);
     grid-template-areas: "header header" "banner banner" "caja1 caja1" "caja2 caja2" "caja3 caja3" "caja4 caja4" "caja5 caja5" "caja6 caja6" "footer footer"; }
+    .contenedorServicios h2 {
+      font-size: 2rem; }
+    .contenedorServicios h3 {
+      font-size: 2rem; }
+    .contenedorServicios p {
+      font-size: 1rem; }
   .contenedorNosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, auto);
     grid-template-areas: "persona1 persona1" "botonera1 botonera1" "persona2 persona2" "botonera2 botonera2" "persona3 persona3" "botonera3 botonera3"; }
+    .contenedorNosotros h3 {
+      font-size: 2rem; }
+    .contenedorNosotros p {
+      font-size: 1rem; }
+  .nosotros h2 {
+    font-size: 2rem; }
   .persona1,
   .persona2,
   .persona3 {
@@ -374,7 +392,9 @@ body {
   .personal {
     width: 200px; }
   .botonera {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .contacto h2 {
+    font-size: 2rem; } }
 
 @media screen and (min-width: 768px) and (max-width: 1276px) {
   .contenedorNosotros {

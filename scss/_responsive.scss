@@ -5,9 +5,11 @@
 		}
 	}
 
-	.banner {
-		h2 {
-			font-size: 2rem;
+	.header {
+		.menu {
+			li {
+				font-size: 1.4rem;
+			}
 		}
 	}
 
@@ -20,6 +22,18 @@
 			"contenido contenido"
 			"sidebar sidebar"
 			"footer footer";
+
+		h2 {
+			font-size: $subtitulo - 2;
+		}
+
+		h3 {
+			font-size: $subtitulo - 2;
+		}
+
+		p {
+			font-size: $subtitulo - 3;
+		}
 	}
 
 	.contenedorServicios {
@@ -35,6 +49,18 @@
 			"caja5 caja5"
 			"caja6 caja6"
 			"footer footer";
+
+		h2 {
+			font-size: $subtitulo - 2;
+		}
+
+		h3 {
+			font-size: $subtitulo - 2;
+		}
+
+		p {
+			font-size: $subtitulo - 3;
+		}
 	}
 
 	.contenedorNosotros {
@@ -48,6 +74,20 @@
 			"botonera2 botonera2"
 			"persona3 persona3"
 			"botonera3 botonera3";
+
+
+		h3 {
+			font-size: $subtitulo - 2;
+		}
+
+		p {
+			font-size: $subtitulo - 3;
+		}
+	}
+	.nosotros {
+		h2 {
+			font-size: $subtitulo - 2;
+		}
 	}
 
 	.persona1,
@@ -67,6 +107,11 @@
 
 	.botonera {
 		margin-bottom: 40px;
+	}
+	.contacto{
+		h2 {
+			font-size: $subtitulo - 2;
+		}
 	}
 }
 
