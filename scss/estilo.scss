@@ -44,7 +44,7 @@ body{
         @include titulostipografia ('Alice', center, $subtitulo - 2);
     }
     h4{
-        @include titulostipografia ('Alice', center, $subtitulo - 2);
+        @include titulostipografia ('Alice', center, $subtitulo - 2.6);
     }
     h5 {
         @include titulostipografia ('Alice', center, $subtitulo - 2);

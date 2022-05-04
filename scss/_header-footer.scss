@@ -32,7 +32,7 @@
         li {
 			display: inline-block;
 			position: relative;
-			font-size: $subtitulo - 2;
+			font-size: $subtitulo - 2.6;
 
 			a {
 				@include decosubtitle (none, $colorsubtitulo);
