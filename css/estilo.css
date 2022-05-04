@@ -402,6 +402,10 @@ body {
     font-size: 2rem; } }
 
 @media screen and (min-width: 768px) and (max-width: 1276px) {
+  .contenedorServicios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header header" "banner banner" "caja1 caja2" "caja3 caja4" "caja5 caja6" "footer footer"; }
   .contenedorNosotros {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
