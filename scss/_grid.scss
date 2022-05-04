@@ -26,6 +26,7 @@
 	grid-area: footer;
 }
 .contenedorServicios {
+	background-color: $bgbody;
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -69,6 +70,7 @@
 	text-align: center;
 }
 .contenedorNosotros {
+	background-color: $bgbody;
 	width: 100%;
 	display: grid;
 	grid-template-columns: 3fr 1fr;

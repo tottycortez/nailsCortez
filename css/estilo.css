@@ -57,6 +57,7 @@ body {
   grid-area: footer; }
 
 .contenedorServicios {
+  background-color: #c6daf3;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -94,6 +95,7 @@ body {
   text-align: center; }
 
 .contenedorNosotros {
+  background-color: #c6daf3;
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -227,6 +229,9 @@ body {
 
 .botonera:hover {
   background-color: #d5adc8; }
+
+.contenedorContacto {
+  background-color: #c6daf3; }
 
 .titulo {
   -webkit-animation: tracking-in-expand 7s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
