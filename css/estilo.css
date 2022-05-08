@@ -424,3 +424,10 @@ body {
     width: 200px; }
   .botonera {
     margin-bottom: 40px; } }
+
+.contenedor-princ {
+  width: 70%; }
+  .contenedor-princ .caja-contacto {
+    padding-top: 20px; }
+    .contenedor-princ .caja-contacto .espacio {
+      display: block; }
