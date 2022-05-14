@@ -137,6 +137,31 @@ body {
   align-items: center;
   justify-content: center; }
 
+.contenedorContacto {
+  background-color: #c6daf3;
+  width: 100%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "ubicacionLocal comunicacionMedios" "comunicacionContacto comunicacionContacto"; }
+
+.ubicacionLocal {
+  grid-area: ubicacionLocal; }
+
+.comunicacionMedios {
+  grid-area: comunicacionMedios; }
+
+.comunicacionContacto {
+  grid-area: comunicacionContacto; }
+
+.ubicacionLocal,
+.comunicacionMedios,
+.comunicacionContacto {
+  text-align: center;
+  margin: 30px;
+  padding: 20px; }
+
 .header, .footer {
   background-color: #d5adc8;
   background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
@@ -197,6 +222,8 @@ body {
   background-position: initial; }
 
 .contenedor-princ {
+  width: 100%;
+  text-align: center;
   margin: 30px; }
   .contenedor-princ .presentacion {
     text-align: center; }
@@ -230,8 +257,8 @@ body {
 .botonera:hover {
   background-color: #d5adc8; }
 
-.contenedorContacto {
-  background-color: #c6daf3; }
+.caja-contacto {
+  padding: 10px; }
 
 .titulo {
   -webkit-animation: tracking-in-expand 7s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
@@ -401,7 +428,18 @@ body {
   .botonera {
     margin-bottom: 40px; }
   .contacto h2 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .contenedorContacto {
+    background-color: #c6daf3;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "ubicacionLocal ubicacionLocal" "comunicacionMedios comunicacionMedios" "comunicacionContacto comunicacionContacto"; }
+    .contenedorContacto .video {
+      width: 210px;
+      height: auto; } }
 
 @media screen and (min-width: 768px) and (max-width: 1276px) {
   .contenedorServicios {
@@ -425,7 +463,15 @@ body {
   .personal {
     width: 200px; }
   .botonera {
-    margin-bottom: 40px; } }
+    margin-bottom: 40px; }
+  .contenedorContacto {
+    background-color: #c6daf3;
+    width: 100%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "ubicacionLocal" "comunicacionMedios" "comunicacionContacto"; } }
 
 .contenedor-princ {
   width: 70%; }

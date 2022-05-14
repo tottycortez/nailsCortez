@@ -115,3 +115,30 @@
 	align-items: center;
 	justify-content: center;
 }
+.contenedorContacto{
+	background-color: $bgbody;
+	width: 100%;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas:
+		"ubicacionLocal comunicacionMedios"
+		"comunicacionContacto comunicacionContacto";
+}
+.ubicacionLocal{
+	grid-area: ubicacionLocal;
+}
+.comunicacionMedios{
+	grid-area: comunicacionMedios;
+}
+.comunicacionContacto{
+	grid-area: comunicacionContacto;
+}
+.ubicacionLocal,
+.comunicacionMedios,
+.comunicacionContacto {
+	text-align: center;
+	margin: 30px;
+	padding: 20px;
+}

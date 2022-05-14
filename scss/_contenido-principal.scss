@@ -1,4 +1,6 @@
 .contenedor-princ {
+	width: 100%;
+	text-align: center;
 	margin: 30px;
     .presentacion {
         text-align: center;
@@ -34,6 +36,6 @@
 .botonera:hover {
     background-color: #d5adc8;
 }
-.contenedorContacto{
-	background-color: $bgbody;
+.caja-contacto{
+	padding: 10px;
 }

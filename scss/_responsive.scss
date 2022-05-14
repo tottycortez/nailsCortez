@@ -17,7 +17,6 @@
 			width: auto;
 		}
 	}
-
 	.contenedorInicio {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(5, auto);
@@ -27,7 +26,6 @@
 			"contenido contenido"
 			"sidebar sidebar"
 			"footer footer";
-
 		h2 {
 			font-size: $subtitulo - 2;
 		}
@@ -40,7 +38,6 @@
 			font-size: $subtitulo - 3;
 		}
 	}
-
 	.contenedorServicios {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(9, auto);
@@ -54,7 +51,6 @@
 			"caja5 caja5"
 			"caja6 caja6"
 			"footer footer";
-
 		h2 {
 			font-size: $subtitulo - 2;
 		}
@@ -67,7 +63,6 @@
 			font-size: $subtitulo - 3;
 		}
 	}
-
 	.contenedorNosotros {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -79,8 +74,6 @@
 			"botonera2 botonera2"
 			"persona3 persona3"
 			"botonera3 botonera3";
-
-
 		h3 {
 			font-size: $subtitulo - 2;
 		}
@@ -94,7 +87,6 @@
 			font-size: $subtitulo - 2;
 		}
 	}
-
 	.persona1,
 	.persona2,
 	.persona3 {
@@ -105,17 +97,31 @@
 		display: flex;
 		flex-direction: column;
 	}
-
 	.personal {
 		width: 200px;
 	}
-
 	.botonera {
 		margin-bottom: 40px;
 	}
 	.contacto{
 		h2 {
 			font-size: $subtitulo - 2;
+		}
+	}
+	.contenedorContacto {
+		background-color: $bgbody;
+		width: 100%;
+		align-items: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas:
+			"ubicacionLocal ubicacionLocal"
+			"comunicacionMedios comunicacionMedios"
+			"comunicacionContacto comunicacionContacto";
+		.video{
+			width: 210px;
+			height: auto;
 		}
 	}
 }
@@ -162,6 +168,18 @@
 
 	.botonera {
 		margin-bottom: 40px;
+	}
+	.contenedorContacto{
+		background-color: $bgbody;
+		width: 100%;
+		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(3, auto);
+		grid-template-areas:
+			"ubicacionLocal"
+			"comunicacionMedios"
+			"comunicacionContacto";
 	}
 }
 

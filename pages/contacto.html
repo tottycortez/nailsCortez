@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servicio de uñas y pies, area de contacto. Podras contactarte con nosotros para poder reservar tus turnos.">
+    <meta name="description"
+        content="Servicio de uñas y pies, area de contacto. Podras contactarte con nosotros para poder reservar tus turnos.">
     <meta name="keywords" content="NAILS, UÑAS, PIES, SERVICIO, INICIO, BELLEZA, EVENTOS, CALIDAD">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -18,79 +19,97 @@
 </head>
 
 <body>
-    <div class="contenedorContacto">
-        <!--Header-->
-        <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <h1 class="titulo"><a href="../index.html">Nails Rocio</a></h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
-                        <li class="nav-item">
-                            <a class="link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="link" href="servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="link" href="nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!--Fin Header-->
-        <!--Hero-->
-        <section class="banner contacto">
-            <h2>- Contactate con nosotros y reserva tu turno, se van volando! -</h2>
+    <!--Header-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <h1 class="titulo"><a href="../index.html">Nails Rocio</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                    <li class="nav-item">
+                        <a class="link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Fin Header-->
+    <!--Hero-->
+    <section class="banner contacto">
+        <h2>- Contactate con nosotros y reserva tu turno, se van volando! -</h2>
+    </section>
+    <!--Fin Hero-->
+    <!--Contenido Principal-->
+    <main class="contenedorContacto">
+        <section class="ubicacionLocal">
+            <h3>Vení a nuestro local!</h3>
+            <p>Estamos en Av. Siempre Viva 742</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.2331343648016!2d-103.33453398524473!3d20.578534786244035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b2cbcdf87c63%3A0xd85c635925e0d48b!2sAv%20Siempre%20Viva%20742%2C%20Vista%20Hermosa%2C%2045618%20San%20Pedro%20Tlaquepaque%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sar!4v1652410851194!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" class="video" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </section>
-        <!--Fin Hero-->
-        <!--Contenido Principal-->
-        <section class="contenido">
-            <section class="contenedor-princ">
-                <form action="">
-                    <fieldset>
-                        <legend>Formulario de contacto</legend>
-                        <div class="caja-contacto">
-                            <label for="nombre">Escribe tu Nombre *</label> <input class="espacio" type="text" name="nombre" required>
-                        </div>
-                        <div class="caja-contacto">
-                            <label for="apellido">Escribe tu Apellido</label> <input class="espacio" type="text" name="apellido">
-                        </div>
-                        <div class="caja-contacto">
-                            <label for="celular">Escribe tu Celular *</label> <input class="espacio" type="celular" name="celular"
-                                required>
-                        </div>
-                        <div class="caja-contacto">
-                            <label for="comentario">✨Dejanos tu consulta✨</label><br>
-                            <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-                        </div>
-                        <div><label for="terminos"> Acepta términos y condiciones</label></div>
-                        <input type="checkbox" name="acepta" value="1" required>
-                        <input type="submit" value="Enviar datos"><input type="reset" value="Borar datos">
-                    </fieldset>
-                </form>
-            </section>
+
+        <section class="comunicacionMedios">
+            <h3>Nuestras redes</h3>
+            <h3>Teléfono</h3>
+            <p>011 1234-1234</p>
         </section>
-        <!--Fin Contenido Principal-->
-        <!--Pie de Página-->
-        <footer class="footer">
-            <ul class="pie">
-                <li><a class="link"  href="../index.html">Inicio</a></li>
-                <li><a class="link"  href="nosotros.html">Nosotros</a></li>
-                <li><a class="link"  href="contacto.html">Contacto</a></li>
-            </ul>
-            <h4>Creada por JorgeCortez🌠 2022</h4>
-        </footer>
-        <!--Fin Pie de Página-->
-    </div>
+
+        <section class="comunicacionContacto">
+            <h3>Escribinos!</h3>
+            <form action="">
+                <fieldset>
+                    <legend>Formulario de contacto</legend>
+                    <div class="caja-contacto">
+                        <label for="nombre">Escribe tu Nombre*</label> <input class="espacio" type="text" name="nombre"
+                            required>
+                    </div>
+                    <div class="caja-contacto">
+                        <label for="apellido">Escribe tu Apellido</label> <input class="espacio" type="text"
+                            name="apellido">
+                    </div>
+                    <div class="caja-contacto">
+                        <label for="celular">Escribe tu Celular*</label> <input class="espacio" type="celular"
+                            name="celular" required>
+                    </div>
+                    <div class="caja-contacto">
+                        <label for="comentario">✨Dejanos tu consulta✨</label><br>
+                        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div><label for="terminos"> Acepta términos y condiciones</label></div>
+                    <input type="checkbox" name="acepta" value="1" required>
+                    <input type="submit" value="Enviar datos"><input type="reset" value="Borar datos">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!--Fin Contenido Principal-->
+    <!--Pie de Página-->
+    <footer class="footer">
+        <ul class="pie">
+            <li><a class="link" href="../index.html">Inicio</a></li>
+            <li><a class="link" href="nosotros.html">Nosotros</a></li>
+            <li><a class="link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <h4>Creada por JorgeCortez🌠 2022</h4>
+    </footer>
+    <!--Fin Pie de Página-->
 </body>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
