@@ -261,6 +261,10 @@ body {
 .caja-contacto {
   padding: 10px; }
 
+.linksRedes {
+  display: flex;
+  justify-content: center; }
+
 .titulo {
   -webkit-animation: tracking-in-expand 7s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
   animation: tracking-in-expand 7s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both; }
